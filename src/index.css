@@ -35,7 +35,7 @@ header .nav {
   
 }
 
-header .nav li {
+header .nav-item {
   display: flex;
   align-items: center;
   border-radius: 5px;
@@ -44,11 +44,11 @@ header .nav li {
   cursor: pointer;
   transition: 200ms ease-in-out;
 }
-header .nav li:hover {
+header .nav-item:hover {
   background-color: #fff;
   color: #202020;
 }
-header .nav li:active {
+header .nav-item.active {
   background-color: #fff;
   color: #202020;
 }
@@ -132,10 +132,12 @@ main h1 {
 }
 .add-cart-icon {
   scale: 1.5;
-  transition: 400ms;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 200ms;
 }
 .add-cart-icon:hover {
-  transform: scale(1.1);
+  background-color: #303030;
 }
 
 
