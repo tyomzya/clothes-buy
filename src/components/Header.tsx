@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -6,6 +7,7 @@ export default function Header() {
       <div className='nav-bar'>
         <span className='logo'>ClothesBuy</span>
         <ul className='nav'>
+          <li><span>Корзина</span><FaShoppingCart className='cart-icon'/></li>
           <li>Кабинет</li>
           <li>Контакты</li>
           <li>О нас</li>

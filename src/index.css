@@ -36,16 +36,25 @@ header .nav {
 }
 
 header .nav li {
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   padding: 5px 10px;
   margin-left: 50px;
   cursor: pointer;
   transition: 200ms ease-in-out;
 }
-
 header .nav li:hover {
   background-color: #fff;
   color: #202020;
+}
+header .nav li:active {
+  background-color: #fff;
+  color: #202020;
+}
+
+.cart-icon {
+  margin-left: 5px;
 }
 
 header .presentation {
@@ -55,7 +64,81 @@ header .presentation {
   height: 400px;
   background-blend-mode: multiply;
   background-color: #e0e0e0;
+  position: relative;
 }
+header .presentation::after {
+  content: 'ClothesBuy';
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  font-size: 40px;
+  font-weight: 800;
+}
+header .presentation::before {
+  content: 'Стиль - это наше всё';
+  position: absolute;
+  bottom: 60px;
+  right: 100px;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+
+main h1 {
+  margin-bottom: 50px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 15px;
+  margin: 10px;
+  background-color: #404040;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 200ms;
+}
+.product:hover {
+  transform: scale(1.03);
+}
+.product-image {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+.product-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.product-text {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 400;
+}
+.price {
+  margin-top: 5px;
+  font-weight: 500;
+}
+.add-cart-icon {
+  scale: 1.5;
+  transition: 400ms;
+}
+.add-cart-icon:hover {
+  transform: scale(1.1);
+}
+
+
 
 footer {
   text-align: center;
